@@ -1,0 +1,16 @@
+var scrambledArray = ["student", "of", true, 123, "am", "a", "GIAIC", "I"];
+var val = scrambledArray.slice(7)[0];
+var val2 = scrambledArray.slice(4, 5)[0];
+scrambledArray.unshift(val);
+scrambledArray.pop();
+scrambledArray.splice(1, 0, val2);
+scrambledArray.splice(6, 1);
+var val3 = scrambledArray.slice(7)[0];
+scrambledArray.splice(4, 0, val3);
+scrambledArray.pop();
+var val4 = scrambledArray.slice(7)[0];
+scrambledArray.splice(2, 0, val4);
+scrambledArray.pop();
+scrambledArray.pop();
+scrambledArray.pop();
+console.log(scrambledArray);
